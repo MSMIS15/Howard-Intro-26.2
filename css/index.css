@@ -1,0 +1,101 @@
+
+/*****************/
+/* Global Styles */
+/*****************/
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: #ebebeb;
+}
+
+
+/**************/
+/* Typography */
+/**************/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ff5c35;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ebebeb;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8c8c8c;
+}
+
+/**********/
+/* Layout */
+/**********/
+
+section {
+    margin-bottom: 100px;
+}
+
+a {
+    color: #2d91c9;
+}
+
+#about p {
+    text-indent: 2%;
+}
+
+#experience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%; /* change later */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.column-job-title {
+    text-indent: 8%;
+    text-align: left;
+}
+
+.column-job-dates {
+    text-align: right;
+}
+
+.row-job-desc {
+    margin-left: 5em;
+    text-align: justify;
+    justify-content: flex-start;
+}
+
+#connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
