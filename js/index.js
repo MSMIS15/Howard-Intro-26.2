@@ -7,7 +7,7 @@ let myName = "Howard Jiang";
 
 let today = new Date();
 
-let thisYear = today.getFullYear(today);
+let thisYear = today.getFullYear();
 
 const footer = document.createElement('footer');
 
