@@ -11,15 +11,14 @@ let thisYear = today.getFullYear(today);
 
 const footer = document.createElement('footer');
 
-const footerElement = document.querySelector('footer');
-
 const copyright = document.createElement("p");
 
 // Tutorials say innerHTML is not secure but assignment says to use innerHTML
 copyright.innerHTML = `&copy; ${thisYear} ${myName}`;
 
-document.body.appendChild(copyright);
+document.body.appendChild(footer);
 
+footer.appendChild(copyright);
 
 // +-------------------------------+
 // | DEFINE AND ADD LIST OF SKILLS |
