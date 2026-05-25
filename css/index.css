@@ -120,6 +120,13 @@ a {
     justify-content: flex-start;
 }
 
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
 #skills li {
     display: flex;
     flex-direction: column;
