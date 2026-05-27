@@ -25,12 +25,14 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 50px;
     font-weight: 600;
     color: #ff5c35;
 }
 
 h2 {
+    text-align: left;
     font-size: 30px;
     font-weight: 400;
     color: #ebebeb;
@@ -41,6 +43,7 @@ h3 {
     font-weight: 700;
     color: #8c8c8c;
 }
+
 
 /**********/
 /* Layout */
@@ -54,8 +57,26 @@ a {
     color: #2d91c9;
 }
 
+.header-nav {
+    position: sticky;
+    top: 0;
+    padding: 0.625em;
+    background-color: #FFEBCD;
+    z-index: 100;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    justify-content: center;
+}
+
 #about p {
-    text-indent: 2%;
+    width: fit-content;
+    border: 2px solid #ff5c35;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 #experience {
@@ -65,11 +86,20 @@ a {
     justify-content: flex-end;
 }
 
+.job {
+    width: auto;
+    border: 2px solid #ff5c35;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%; /* change later */
+    width: 100%;
 }
 
 .column {
@@ -80,7 +110,6 @@ a {
 }
 
 .column-job-title {
-    text-indent: 8%;
     text-align: left;
 }
 
@@ -89,9 +118,26 @@ a {
 }
 
 .row-job-desc {
-    margin-left: 5em;
     text-align: justify;
     justify-content: flex-start;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+#skills li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 150px;
+    border: 2px solid #ff5c35;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #connect {
