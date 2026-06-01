@@ -59,7 +59,6 @@ messageForm.addEventListener('submit', function(event) {
   removeButton.style.width = '75px';
   removeButton.style.height = '30px';
   removeButton.style.fontSize = '17px';
-
   removeButton.addEventListener('click', function() {
     const entry = removeButton.parentNode;
     entry.remove();

@@ -151,9 +151,9 @@ a {
 }
 
 button[type="submit"], input[type="submit"] {
-  font-size: 17px;
-  width: 75px;
-  height: 30px;
+    font-size: 17px;
+    width: 75px;
+    height: 30px;
 }
 
 #messages li {
