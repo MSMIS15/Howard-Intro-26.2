@@ -164,19 +164,20 @@
         <!-- Section added here per Teresa's Slack msg on 5/27 -->
         <section id="leave-a-message">
             <h2>Leave a Message</h2>
+            <!-- Using ul & li tags for style matching -->
             <ul>
                 <form name="leave_message">
                     <li>
                         <label for="name">Name:</label><br>
-                        <input type="text" name="usersName" required><br><br>
+                        <input id="name" type="text" name="usersName" required><br><br>
                     </li>
                     <li>
                         <label for="email">Email:</label><br>
-                        <input type="email" name="usersEmail" required><br><br>
+                        <input id="email" type="email" name="usersEmail" required><br><br>
                     </li>
                     <li>
                         <label for="message">Message:</label><br>
-                        <textarea name="usersMessage" rows="5" required></textarea><br><br>
+                        <textarea id="message" name="usersMessage" rows="5" required></textarea><br><br>
                     </li>
 
                     <button type="submit">Submit</button>
