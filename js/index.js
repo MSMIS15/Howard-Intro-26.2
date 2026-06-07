@@ -54,6 +54,8 @@ messageForm.addEventListener('submit', function(event) {
 
   newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> <span>${message}</span>`;
 
+  event.target.reset();
+
   removeButton.innerText = 'Remove';
   removeButton.setAttribute('type', 'button');
   removeButton.style.width = '75px';
@@ -65,6 +67,4 @@ messageForm.addEventListener('submit', function(event) {
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
-
-  event.target.reset();
 });
