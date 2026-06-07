@@ -15,6 +15,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#leave-a-message">Leave a Message</a></li>
                 <li><a href="#connect">Connect</a></li>
             </ul>
         </nav>
@@ -156,6 +157,26 @@
 
         <section id="projects">
             <h2>Projects</h2>
+            <ul>
+            </ul>
+        </section>
+
+        <!-- Section added here per Teresa's Slack msg on 5/27 -->
+        <section id="leave-a-message">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label for="name">Name:</label><br>
+                <input id="name" type="text" name="usersName" required><br><br>
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" name="usersEmail" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="usersMessage" rows="5" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
             <ul>
             </ul>
         </section>
