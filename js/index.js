@@ -93,5 +93,14 @@ fetch('https://api.github.com/users/MSMIS15/repos')
   
 .catch(error => {
   console.error('[ERROR]: Unable to retrieve list of repositories!', error);
+
+  const projectSection = document.getElementById('projects');
+
+  if (projectSection) {
+    const projectList = projectSection.querySelector('ul');
+    if (projectList) {
+      projectList.innerHTML = '<li>[ERROR]: Unable to retrieve list of repositories!</li>';
+    }
+  }
 });
 
