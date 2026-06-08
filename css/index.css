@@ -138,6 +138,23 @@ a {
     margin-bottom: 10px;
 }
 
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#projects li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 150px;
+    border: 2px solid #ff5c35;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 #leave-a-message li {
     display: flex;
     flex-direction: column;
