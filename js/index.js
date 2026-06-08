@@ -54,8 +54,6 @@ messageForm.addEventListener('submit', function(event) {
 
   newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> <span>${message}</span>`;
 
-  event.target.reset();
-
   removeButton.innerText = 'Remove';
   removeButton.setAttribute('type', 'button');
   removeButton.style.width = '75px';
@@ -64,7 +62,47 @@ messageForm.addEventListener('submit', function(event) {
   removeButton.addEventListener('click', function() {
     const entry = removeButton.parentNode;
     entry.remove();
+
+
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
+
+  this.reset();
 });
+
+
+// +--------------------------------+
+// | FETCH AND DISPLAY MY GIT REPOS |
+// +--------------------------------+
+
+fetch('https://api.github.com/users/MSMIS15/repos')
+
+.then(response => response.json())
+
+.then(repositories => {
+  console.log(repositories);
+
+  const projectSection = document.getElementById('projects'); 
+  const projectList = projectSection.querySelector('ul'); 
+    
+  for (let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+})
+  
+.catch(error => {
+  console.error('[ERROR]: Unable to retrieve list of repositories!', error);
+
+  const projectSection = document.getElementById('projects');
+
+  if (projectSection) {
+    const projectList = projectSection.querySelector('ul');
+    if (projectList) {
+      projectList.innerHTML = '<li>[ERROR]: Unable to retrieve list of repositories!</li>';
+    }
+  }
+});
+
